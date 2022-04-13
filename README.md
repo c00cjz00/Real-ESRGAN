@@ -1,3 +1,4 @@
+```
 ESRGAN
 
 
@@ -18,7 +19,7 @@ cd Real-ESRGAN
 python inference_realesrgan.py -n RealESRGAN_x4plus -i "data/7.照片代轉成高畫質20220401\(要幫縣長出另一本書的照片\)" --face_enhance
 
 
-
+```
 
 
 <p align="center">
