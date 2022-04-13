@@ -1,3 +1,26 @@
+ESRGAN
+
+
+curl https://raw.githubusercontent.com/c00cjz00/hpc_nvflare/main/hpc/condaInit.sh -o condaInit.sh
+source condaInit.sh install_env image_enhancing 3.8
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu110
+
+pip install basicsr
+# facexlib and gfpgan are for face enhancement
+pip install facexlib
+pip install gfpgan
+pip install -r requirements.txt
+python setup.py develop
+
+git clone https://github.com/c00cjz00/Real-ESRGAN.git
+cd Real-ESRGAN
+
+python inference_realesrgan.py -n RealESRGAN_x4plus -i "data/7.照片代轉成高畫質20220401\(要幫縣長出另一本書的照片\)" --face_enhance
+
+
+
+
+
 <p align="center">
   <img src="assets/realesrgan_logo.png" height=120>
 </p>
